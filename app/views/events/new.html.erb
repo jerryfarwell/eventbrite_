@@ -1,0 +1,38 @@
+<div class = "new_event">
+
+<br>
+<h1>Bienvenue sur la page de création d'événements !</h1>
+<br><br>
+<h3>créer votre événement ici 👇🏽 </h3>
+<br>
+
+<%=form_tag url_for(action:'create'), method:"post" do %>
+
+
+<%= label_tag"Date de début :"%><br>
+  <%= text_field_tag'start_date'%><br><br>
+
+  <%= label_tag"durée de l'évenement :"%><br>
+  <%= text_field_tag'duration'%><br><br>
+
+  <%= label_tag"titre :"%><br>
+  <%= text_field_tag'title'%><br><br>
+
+  <%= label_tag"le prix de participation :"%><br>
+  <%= text_field_tag'price'%><br><br>
+
+  <%= label_tag"l'adresse de l'évenement :"%><br>
+  <%= text_field_tag'location'%><br><br>
+
+  <%=label_tag'decrivez votre évenement :'%><br>
+  <%= text_area_tag 'description'%><br><br>
+
+  <%= submit_tag "créer" %>
+<%end%>
+</div>
+
+<br/><br/> 
+
+
+
+
